@@ -102,8 +102,16 @@ class HomeScreen extends ConsumerWidget {
               child: PageView(
                 controller: _pageController,
                 children: pageViewItems,
+<<<<<<< HEAD
                 onPageChanged: (int index) =>
                     context.read(selectedIndex).state = index,
+=======
+<<<<<<< HEAD
+                onPageChanged: (int index) =>
+                    context.read(selectedIndex).state = index,
+=======
+>>>>>>> de7038ea30dab370c28f1fb9cdd790ac3e6a8173
+>>>>>>> fcd0ccae36d399beb5e185a50c319894aaa63da2
               ),
             )
           ],

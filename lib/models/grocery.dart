@@ -58,3 +58,11 @@ class Grocery {
         imageUrl = snapshot.data()['imageUrl'],
         purchased = snapshot.data()['purchased'];
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> de7038ea30dab370c28f1fb9cdd790ac3e6a8173
+>>>>>>> fcd0ccae36d399beb5e185a50c319894aaa63da2
