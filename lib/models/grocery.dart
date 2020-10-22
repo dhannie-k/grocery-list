@@ -59,12 +59,4 @@ class Grocery {
         purchased = snapshot.data()['purchased'];
 }
 
-//not aplicable for stream
-/* class GroceryList extends StateNotifier<List<Grocery>> {
-  GroceryList([List<Grocery> initialList]) : super(initialList ?? []);
 
-  void add(Grocery item) {
-    state = [...state, item];
-  }
-}
- */
