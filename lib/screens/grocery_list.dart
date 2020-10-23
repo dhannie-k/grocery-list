@@ -46,7 +46,7 @@ class GroceryList extends ConsumerWidget {
                 ),
                 Text(
                   items
-                      .map((e) => e.price)
+                      .map((e) => e.price * e.quantity)
                       .fold(0, (prev, next) => prev + next)
                       .toString(),
                   style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
