@@ -28,7 +28,7 @@ class FavoriteItems extends ConsumerWidget {
                         )),
                       );
                 },
-                editItem: () => Navigator.pushReplacement(
+                editItem: () => Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => EditUpdateItem(item))),
