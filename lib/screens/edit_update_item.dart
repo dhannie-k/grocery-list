@@ -58,17 +58,18 @@ class EditUpdateItem extends HookWidget {
               TextFormField(
                 controller: quantityTxtController,
                 decoration: InputDecoration(labelText: 'quantity'),
-                validator: (value) => formFieldValidator(value),
+                validator: (value) => validateQuantity(value),
+                keyboardType: TextInputType.number,
               ),
               TextFormField(
                 controller: unitTxtController,
                 decoration: InputDecoration(labelText: 'unit - ex: 200gr/pack'),
-                validator: (value) => formFieldValidator(value),
               ),
               TextFormField(
                 controller: priceTxtController,
                 decoration: InputDecoration(labelText: 'price'),
                 validator: (value) => formFieldValidator(value),
+                keyboardType: TextInputType.number,
               ),
               SizedBox(height: 10.0),
               imageUrl.value.isEmpty

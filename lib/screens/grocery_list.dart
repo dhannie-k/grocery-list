@@ -106,6 +106,7 @@ class GroceryList extends ConsumerWidget {
           ),
           ...items.map((i) =>
               i.purchased == true ? PurchasedItem(item: i) : SizedBox.shrink()),
+          SizedBox(height: 70.0), //space for FAB
         ],
       ),
     );

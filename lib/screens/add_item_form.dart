@@ -61,13 +61,13 @@ class AddItemForm extends HookWidget {
                 key: Key('qty'),
                 controller: quantityTxtController,
                 decoration: InputDecoration(labelText: 'quantity'),
-                validator: (value) => formFieldValidator(value),
+                keyboardType: TextInputType.number,
+                validator: (value) => validateQuantity(value),
               ),
               TextFormField(
                 key: Key('unit'),
                 controller: unitTxtController,
                 decoration: InputDecoration(labelText: 'unit - ex: 200gr/pack'),
-                validator: (value) => formFieldValidator(value),
               ),
               TextFormField(
                 key: Key('price'),

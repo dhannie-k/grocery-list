@@ -23,3 +23,12 @@ String validatePassword(String value) {
       ? "password cannot be less than 6 character long"
       : null;
 }
+
+String validateQuantity(String value) {
+  if (value.isEmpty) {
+    return '$value cannot be empty';
+  } else if (int.tryParse(value) == null) {
+    return '$value is not whole number';
+  }
+  return null;
+}

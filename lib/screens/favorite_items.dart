@@ -41,6 +41,7 @@ class FavoriteItems extends ConsumerWidget {
                           ));
                 }),
           ),
+          SizedBox(height: 70.0), //clear space for FAB
         ],
       ),
     );
